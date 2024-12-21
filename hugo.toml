@@ -1,0 +1,63 @@
+baseURL = 'https://food.saajanm.com/'
+languageCode = 'en-us'
+title = "Saajan's Plate"
+theme = 'hugo-texify2'
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+identifier = "post"
+name = "Posts"
+url = "/posts"
+weight = 2
+[[menu.main]]
+identifier = "gallery"
+name = "Gallery"
+url = "/gallery/"
+weight = 3
+
+[taxonomies]
+tags = "tags"
+
+[params]
+title = "Saajan's Plate"
+description = "A blog containing whatever meals or dishes I make or catch my eye, along with an associated review of what I liked and did not like."
+footnote = """
+Follow me on <a class=link href=https://github.com/SaajanM target=_blank rel=noopener>GitHub</a> or
+<a class=link href=/index.xml>RSS</a> |
+Visit my main <a class=link href=https://www.saajanm.com target=_blank rel=noopener>site</a>
+"""
+keywords = ["hugo", "latex", "blog", "food", "SaajanM"]
+customCSS = []
+customJS = []
+dateFormat = "January 1, 2024"
+emphasisWithDots = true
+since = "2024"
+toc = false
+showWordCount = true
+showReadingTime = true
+rootFontSize = "120%"
+math = true
+enableDuckDuckGoSearchBox = false
+numberedSubtitles = false
+
+[params.commentEngine]
+code = """
+"""
+
+[params.buymeacoffee]
+code = """
+"""
+
+[params.sharingbuttons]
+facebook = false
+twitter = false
+email = false
+linkedin = false
+reddit = false
+whatsapp = false
+hackernews = false
+telegram = false
