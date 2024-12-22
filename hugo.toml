@@ -11,7 +11,7 @@ weight = 1
 [[menu.main]]
 identifier = "post"
 name = "Posts"
-url = "/posts"
+url = "/post"
 weight = 2
 [[menu.main]]
 identifier = "gallery"
@@ -21,6 +21,8 @@ weight = 3
 
 [taxonomies]
 tags = "tags"
+location = "location"
+meal = "meal"
 
 [params]
 title = "Saajan's Plate"
@@ -30,16 +32,16 @@ Follow me on <a class=link href=https://github.com/SaajanM target=_blank rel=noo
 <a class=link href=/index.xml>RSS</a> |
 Visit my main <a class=link href=https://www.saajanm.com target=_blank rel=noopener>site</a>
 """
-keywords = ["hugo", "latex", "blog", "food", "SaajanM"]
+keywords = ["food", "blog", "SaajanM", "hugo", "latex"]
 customCSS = []
 customJS = []
-dateFormat = "January 1, 2024"
+dateFormat = "January 2, 2006"
 emphasisWithDots = true
 since = "2024"
 toc = false
-showWordCount = true
+showWordCount = false
 showReadingTime = true
-rootFontSize = "120%"
+rootFontSize = "100%"
 math = true
 enableDuckDuckGoSearchBox = false
 numberedSubtitles = false

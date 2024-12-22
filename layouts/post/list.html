@@ -1,0 +1,80 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/index.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main" class="index">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "post") }}
+    {{ range $paginator.Pages }}
+    <div class="post-container">
+        <a href="{{ .Permalink }}" class="post-thumb" style="background-image: url({{.Params.preview|urlize}});">
+            {{/* <img src="{{ .Params.preview | urlize }}" alt=""> */}}
+        </a>
+        <div class="post">
+            <h2>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+            <div class="post-meta-wrapper">
+                <a href="{{ .Permalink }}" class="post-thumb-alt"
+                    style="background-image: url({{.Params.preview|urlize}});">
+                    {{/* <img src="{{ .Params.preview | urlize }}" alt=""> */}}
+                </a>
+                <div class="post-meta">
+                    <div>
+                        {{ if .Site.Params.showWordCount }}
+                        <span>{{ .WordCount }} words</span>
+                        {{ end }}
+
+                        {{ if gt .ReadingTime 1 }}
+                        {{ .Scratch.Set "timeUnit" "mins" }}
+                        {{ else }}
+                        {{ .Scratch.Set "timeUnit" "min" }}
+                        {{ end }}
+                        {{ if .Site.Params.showReadingTime }}
+                        <span>~{{.ReadingTime}} {{ .Scratch.Get "timeUnit" }}</span>
+                        {{ end }}
+
+                        <time>{{ .PublishDate.Format .Site.Params.dateFormat }}</time>
+                    </div>
+                    {{ if or (ne .Params.tags nil) (ne .Params.location nil)}}
+                    <div>
+                        {{ range .Params.location }}
+                        <a class="link" href='{{ "location" | absURL }}/{{ . | urlize }}'>location:{{ . }}</a>
+                        {{ end }}
+                        {{ range .Params.meal }}
+                        <a class="link" href='{{ "meal" | absURL }}/{{ . | urlize }}'>meal:{{ . }}</a>
+                        {{ end }}
+                        {{ range .Params.tags }}
+                        <a class="link" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="content">
+                {{ if .Site.Params.emphasisWithDots }}
+                {{ .Summary | replaceRE "<strong>(\\p{Han}+?)</strong>" "<strong class=chinese>$1</strong>" | safeHTML
+                }}
+                {{ else }}
+                {{ .Summary }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+    {{ if or $paginator.HasPrev $paginator.HasNext}}
+    <div class="paginator">
+        {{ if $paginator.HasPrev }}
+        <a class="link" href="{{ $paginator.Prev.URL }}">← prev</a>
+        {{ else }}
+        <a></a>
+        {{ end }}
+        {{ if $paginator.HasNext }}
+        <a class="link" href="{{ $paginator.Next.URL }}">next →</a>
+        {{ else }}
+        <a></a>
+        {{ end }}
+    </div>
+    {{ end }}
+</main>
+{{ end }}
