@@ -59,7 +59,7 @@ the riddles within.
 
 Ratings need to be context aware. You can't say that a 15 course meal from a
 fancy restaurant on your birthday is somehow better or worse than a home cooked
-stew your parent's make you when you are sick.
+stew your parents make you when you are sick.
 
 Well you could, I suppose, but you would also be wrong.
 
