@@ -3,6 +3,12 @@ languageCode = 'en-us'
 title = "Saajan's Plate"
 theme = 'hugo-texify2'
 
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+
 [[menu.main]]
 identifier = "home"
 name = "Home"
@@ -14,15 +20,20 @@ name = "Posts"
 url = "/post"
 weight = 2
 [[menu.main]]
+identifier = "archive"
+name = "Archive"
+url = "/archive"
+weight = 3
+[[menu.main]]
 identifier = "gallery"
 name = "Gallery"
 url = "/gallery/"
-weight = 3
+weight = 4
 
 [taxonomies]
-tags = "tags"
-location = "location"
-meal = "meal"
+tag = "tags"
+location = "locations"
+meal = "meals"
 
 [params]
 title = "Saajan's Plate"

@@ -1,3 +1,7 @@
+#main>.list-title {
+    margin-bottom: 1rem;
+}
+
 #main>.post-group>ul {
     border-left: gray solid 1px;
     list-style-type: none;

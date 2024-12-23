@@ -1,0 +1,19 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/list.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main" class="archive">
+  {{ $taxonomyObject := .Data.Terms }}
+  <div class="post-group">
+    <h1>{{.Data.Plural | title}}</h1>
+    <ul>
+      {{ range $term, $weightedPages := $taxonomyObject.ByCount }}
+      <li>
+        <a class="link" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ $weightedPages.Count }})</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</main>
+{{ end }}

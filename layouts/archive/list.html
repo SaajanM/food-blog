@@ -4,7 +4,18 @@
 
 {{ define "main" }}
 <main id="main" class="archive">
-  {{ $pages := .Data.Pages }}
+  <div class="list-title" style="display: inline;">
+    <ul>
+      {{ range .Site.Taxonomies }}
+      {{/*
+      <pre>{{debug.Dump .}}</pre> */}}
+      <li style="display: inline; margin-right: 1rem;">
+        <a class="link" href="{{ .Page.RelPermalink }}">Search by {{.Page.Data.Plural | title}}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ $pages := where (where .Site.Pages "Type" "post") "Kind" "ne" "section"}}
   {{ range $pages.GroupByDate "2006-01" }}
   <div class="post-group">
     <h2>{{ dateFormat "January 2006" (printf "%s-01" .Key) }}</h2>

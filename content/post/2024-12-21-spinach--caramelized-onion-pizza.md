@@ -6,12 +6,14 @@ preview: /images/20241213_122708.jpg
 draft: false
 tags:
   - pizza
-location:
+locations:
   - work
-meal:
+meals:
   - lunch
 slug: spinach-caramelized-onion-pizza
 ---
+
+# God's Food
 
 Magna est ipsum ad ipsum ullamco sunt laboris. Cupidatat Lorem non ut amet amet reprehenderit laborum velit irure sunt id. Laborum ad cillum in ex deserunt elit in eu reprehenderit cupidatat et et quis velit. Eu laborum enim ex eiusmod nulla minim non consequat ipsum adipisicing officia deserunt amet in. Lorem enim elit ex duis cillum. Elit ut ea deserunt irure do in eu officia duis est nisi mollit officia.
 

@@ -38,11 +38,11 @@
                     </div>
                     {{ if or (ne .Params.tags nil) (ne .Params.location nil)}}
                     <div>
-                        {{ range .Params.location }}
-                        <a class="link" href='{{ "location" | absURL }}/{{ . | urlize }}'>location:{{ . }}</a>
+                        {{ range .Params.locations }}
+                        <a class="link" href='{{ "locations" | absURL }}/{{ . | urlize }}'>location:{{ . }}</a>
                         {{ end }}
-                        {{ range .Params.meal }}
-                        <a class="link" href='{{ "meal" | absURL }}/{{ . | urlize }}'>meal:{{ . }}</a>
+                        {{ range .Params.meals }}
+                        <a class="link" href='{{ "meals" | absURL }}/{{ . | urlize }}'>meal:{{ . }}</a>
                         {{ end }}
                         {{ range .Params.tags }}
                         <a class="link" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>

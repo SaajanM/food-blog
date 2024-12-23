@@ -38,3 +38,35 @@
 #main :target {
     background-color: azure;
 }
+
+#main .content-thumb-wrapper {
+    position: relative;
+    width: 700px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10%;
+    white-space: nowrap;
+}
+
+#main .content-thumb-wrapper:before {
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+    width: 0px;
+}
+
+#main .content-thumb-wrapper>.content-thumb {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+    #main .content-thumb-wrapper {
+        width: 300px;
+        height: 300px;
+        margin-left: 1rem;
+        float: right
+    }
+}

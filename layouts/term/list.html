@@ -4,6 +4,10 @@
 
 {{ define "main" }}
 <main id="main" class="archive">
+  <div class="list-title">
+    <h1>{{print .Data.Singular ": " .Data.Term | title}}</h1>
+    <a class="link" href="{{ `../` | urlize}}">View All {{.Data.Plural | title}}</a>
+  </div>
   {{ $pages := .Data.Pages }}
   {{ range $pages.GroupByDate "2006-01" }}
   <div class="post-group">
