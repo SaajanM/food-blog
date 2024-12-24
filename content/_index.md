@@ -40,14 +40,14 @@ below for the breakdown of each part.
 
 #### `[score]`
 
-| Score | Meaning                                                       |
-| ----- | ------------------------------------------------------------- |
-| Death | I should not have eaten this. I think I might die.            |
-| Bad   | I probably wouldn't eat it again, but it certainly is edible. |
-| Ok    | It was edible but was kind of mid.                            |
-| Good  | It was something I enjoyed eating.                            |
-| Great | It was wonderful, and I wish I could have more.               |
-| Peak  | Does there exist anything better in the cosmos?               |
+| Score | Meaning                                            |
+| ----- | -------------------------------------------------- |
+| Death | I should not have eaten this. I think I might die. |
+| Bad   | It certainly is edible.                            |
+| Ok    | It was fine but not something I would crave.       |
+| Good  | It was something I enjoyed eating.                 |
+| Great | It was superb, and I wish I could have more.       |
+| Peak  | Does there exist anything better in the cosmos?    |
 
 #### `[emoji]`
 
