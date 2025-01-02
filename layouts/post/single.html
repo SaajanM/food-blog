@@ -36,6 +36,10 @@
   {{ end }}
   {{ end }}
   <article class="content {{ if .Site.Params.numberedSubtitles }}numbered-subtitles{{ end }}">
+    <h5>
+      Rating:
+      <code>{{ .Params.rating }}</code>
+    </h5>
     <div class="content-thumb-wrapper">
       <img src="{{.Params.preview | urlize}}" class="content-thumb" />
     </div>

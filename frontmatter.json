@@ -2,11 +2,15 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.customTaxonomy": [
     {
-      "id": "location",
-      "options": []
+      "id": "locations",
+      "options": [
+        "castro-street",
+        "eureka",
+        "home"
+      ]
     },
     {
-      "id": "meal",
+      "id": "meals",
       "options": [
         "breakfast",
         "lunch",
@@ -35,7 +39,8 @@
           "name": "date",
           "type": "datetime",
           "default": "{{now}}",
-          "isPublishDate": true
+          "isPublishDate": true,
+          "dateFormat": "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
         },
         {
           "title": "Content preview",
@@ -53,16 +58,21 @@
           "type": "tags"
         },
         {
-          "title": "Location",
-          "name": "location",
+          "title": "Locations",
+          "name": "locations",
           "type": "taxonomy",
-          "taxonomyId": "location"
+          "taxonomyId": "locations"
         },
         {
-          "title": "Meal",
-          "name": "meal",
+          "title": "Meals",
+          "name": "meals",
           "type": "taxonomy",
-          "taxonomyId": "meal"
+          "taxonomyId": "meals"
+        },
+        {
+          "title": "Rating",
+          "name": "rating",
+          "type": "string"
         }
       ]
     }

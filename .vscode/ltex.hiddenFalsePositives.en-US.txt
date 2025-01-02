@@ -1,0 +1,4 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBrussel Sprouts\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QStrawberry & Lychee Martini\\E$"}
+{"rule":"PARMESAN","sentence":"^\\QThe parmesan cheese and truffle sauce pair really well together and they provide\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qon Castro Street in Mountain View, CA.\\E$"}

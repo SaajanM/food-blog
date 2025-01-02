@@ -10,7 +10,8 @@
     <ul>
       {{ range $term, $weightedPages := $taxonomyObject.ByCount }}
       <li>
-        <a class="link" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ $weightedPages.Count }})</a>
+        <a class="link" href="{{ .Page.RelPermalink }}">{{ .Page.Title | replaceRE "-" " " }} ({{ $weightedPages.Count
+          }})</a>
       </li>
       {{ end }}
     </ul>

@@ -1,11 +1,11 @@
 .content .MathJax {
-    font-size: 100%!important;
+    font-size: 100% !important;
     overflow-x: auto;
     overflow-y: hidden;
 }
 
 .content .katex {
-    font-size: 100%!important;
+    font-size: 100% !important;
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -57,8 +57,12 @@
     padding: 0 .2rem;
 }
 
-.content h1, .content h2, .content h3,
-.content h4, .content h5, .content h6 {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
     line-height: 1.5;
 }
 
@@ -87,7 +91,20 @@
 }
 
 .content img {
-    max-width: 100%;
+    max-width: 300px;
+    border-radius: 10%;
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+.content p:has(img) {
+    text-align: center;
+}
+
+.content p:has(img) em {
+    font-size: small;
+    color: #333333;
 }
 
 .content p {
@@ -95,7 +112,7 @@
 }
 
 .content pre {
-    background-color: #F5F5F5!important;
+    background-color: #F5F5F5 !important;
     border-radius: .2rem;
     font-family: 'Latin Modern Mono', Courier, monospace;
     margin-top: .5rem;
@@ -120,7 +137,8 @@
     overflow-x: auto;
 }
 
-.content td, .content th {
+.content td,
+.content th {
     border: #575C61 1px solid;
     padding: .1rem .5rem;
 }
@@ -130,7 +148,8 @@
     color: #FAFAFA;
 }
 
-.content ol, .content ul {
+.content ol,
+.content ul {
     margin-left: 1.5rem;
 }
 
