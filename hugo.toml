@@ -24,11 +24,6 @@ identifier = "archive"
 name = "Archive"
 url = "/archive"
 weight = 3
-[[menu.main]]
-identifier = "gallery"
-name = "Gallery"
-url = "/gallery/"
-weight = 4
 
 [taxonomies]
 tag = "tags"
