@@ -13,6 +13,7 @@ locations:
 meals:
     - lunch
 rating: Ok 🫤 -
+slug: invisible-fish
 ---
 
 ## Discussion
