@@ -1,6 +1,6 @@
 ---
 title: All (Pan) Caked Up
-summary: Whats better then two delicious chocolate chip pancakes with a side of sausage links and hash brown patty?
+summary: What's better then two delicious chocolate chip pancakes with a side of sausage links and a hash brown patty?
 date: 2025-01-01T22:15:00.000-08:00
 preview: /images/20250101_231329.jpg
 draft: false
