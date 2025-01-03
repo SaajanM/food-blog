@@ -36,6 +36,11 @@
 
                         <time>{{ .PublishDate.Format .Site.Params.dateFormat }}</time>
                     </div>
+                    <div>
+                        <h5>
+                            <code>Rating: {{.Params.rating}}</code>
+                        </h5>
+                    </div>
                     {{ if or (ne .Params.tags nil) (ne .Params.location nil)}}
                     <div>
                         {{ range .Params.locations }}
