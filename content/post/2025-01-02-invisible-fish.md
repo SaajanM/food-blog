@@ -1,6 +1,6 @@
 ---
 title: Invisible Fish
-summary: If salmon is eaten without someone photographing, was it really eaten
+summary: If salmon is eaten without someone photographing, was it really eaten?
 date: 2025-01-02T12:05:00.000-08:00
 preview: /other_images/question_mark.png
 draft: false
