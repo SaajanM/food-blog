@@ -14,13 +14,13 @@
   <h1>{{ .Title }}</h1>
   {{ if or (ne .Params.tags nil) (ne .Params.location nil) (ne .Params.meal nil) }}
   <div>
-    {{ range .Params.locations }}
+    {{ range .Params.locations | sort }}
     <a class="link" href='{{ "locations" | absURL }}/{{ . | urlize }}'>location:{{ . }}</a>
     {{ end }}
-    {{ range .Params.meals }}
+    {{ range .Params.meals | sort }}
     <a class="link" href='{{ "meals" | absURL }}/{{ . | urlize }}'>meal:{{ . }}</a>
     {{ end }}
-    {{ range .Params.tags }}
+    {{ range .Params.tags | sort }}
     <a class="link" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>
     {{ end }}
   </div>
