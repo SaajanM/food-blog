@@ -24,7 +24,7 @@ slug: the-fall-of-the-house-of-sandwich
 Sometimes all a dude needs is a homemade sandwich to calm their heart. And I
 suppose that today, I was that dude.
 
-Using the leftover ingredients from [Peaky Burgers]({{< relref "2025-01-02-peaky-burgers.md" >}}),
+Using the leftover ingredients from [Peaky Burgers](/post/peaky-burgers),
 some cheddar cheese, and some Tofurkey from the store, I tossed together a
 sandwich.
 
